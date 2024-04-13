@@ -51,4 +51,6 @@ for page in range(1, max_pages + 1):
         print(f'Erro ao acessar a página {page} do Mercado Livre')
 
 df = pd.DataFrame(dic_produtos)
+
+#Nome e local do arquivo a ser salvo
 df.to_csv('Mercado_Livre.csv', encoding='UTF-8', sep=';')
