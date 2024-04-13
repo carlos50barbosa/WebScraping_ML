@@ -51,4 +51,4 @@ for page in range(1, max_pages + 1):
         print(f'Erro ao acessar a página {page} do Mercado Livre')
 
 df = pd.DataFrame(dic_produtos)
-df.to_csv('Mercado_Livre.csv', encoding='UTF-8', sep=';')# print(list_produtos)
+df.to_csv('/dados_extraidos/Mercado_Livre.csv', encoding='UTF-8', sep=';')
