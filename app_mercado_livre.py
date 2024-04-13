@@ -6,7 +6,7 @@ import pandas as pd
 base_url = 'https://lista.mercadolivre.com.br/geladeira'
 
 # Número máximo de páginas a percorrer
-max_pages = 35
+max_pages = 33
 
 # Cria uma estrutura para armazenar os dados
 dic_produtos = {'Marca': [], 'Preço': []}
@@ -51,4 +51,4 @@ for page in range(1, max_pages + 1):
         print(f'Erro ao acessar a página {page} do Mercado Livre')
 
 df = pd.DataFrame(dic_produtos)
-df.to_csv('/dados_extraidos/Mercado_Livre.csv', encoding='UTF-8', sep=';')
+df.to_csv('Mercado_Livre.csv', encoding='UTF-8', sep=';')
