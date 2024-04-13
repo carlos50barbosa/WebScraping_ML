@@ -45,19 +45,10 @@ for page in range(1, max_pages + 1):
             print(f'Nome: {name} Preço: R$ {price}')
 
             dic_produtos['Marca'].append(name)
-            dic_produtos['Preço'].append(price)
-            
-            # Cria um dicionário para armazenar informações
-            # dic_produtos = {'Nome': name, 'Preço': price}
-
-            # Adiciona informações na lista
-            # list_produtos.append(dic_produtos)
+            dic_produtos['Preço'].append(price)            
 
     else:
         print(f'Erro ao acessar a página {page} do Mercado Livre')
 
 df = pd.DataFrame(dic_produtos)
-
-# Local e nome do arquivo
-df.to_csv('Mercado_Livre.csv', encoding='UTF-8', sep=';')
-# print(list_produtos)
+df.to_csv('Mercado_Livre.csv', encoding='UTF-8', sep=';')# print(list_produtos)
